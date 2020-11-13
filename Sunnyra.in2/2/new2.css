@@ -33,6 +33,22 @@ position:relative;width:100%;height:100%;font-family:Microsoft YaHei,sans-serif;
   width:80%;
 }
 
+.screentip {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #000 url(img/landscape.svg) no-repeat center center;
+  background-size: cover;
+  z-index: 12;
+  display: none;
+  }
+
+@media screen and (orientation: portrait) {
+  .screentip{display: block;}
+  }
+
 @media screen and (min-height: 374px) { 
     .white-block{height: 47%} 
     } 
